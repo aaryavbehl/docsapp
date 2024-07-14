@@ -1,0 +1,29 @@
+@keyframes rainbow {
+    0% { color: #ff0000; }
+    14% { color: #ff7f00; }
+    28% { color: #ffff00; }
+    42% { color: #00ff00; }
+    57% { color: #0000ff; }
+    71% { color: #4b0082; }
+    85% { color: #9400d3; }
+    100% { color: #ff0000; }
+  }
+  
+  .text-rainbow {
+    animation: rainbow 10s linear infinite;
+  }
+  
+  @keyframes glow-fade {
+    0%, 100% {
+      opacity: 0;
+      text-shadow: 0 0 5px rgba(0, 255, 255, 0), 0 0 10px rgba(0, 255, 255, 0), 0 0 15px rgba(0, 255, 255, 0);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.4), 0 0 15px rgba(0, 255, 255, 0.3);
+    }
+  }
+  
+  .text-glow-fade {
+    animation: glow-fade 4s infinite;
+  }
